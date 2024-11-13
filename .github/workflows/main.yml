@@ -29,6 +29,5 @@ jobs:
           echo "Waiting for Flask server to start"
           sleep 30
 
-      Add the step for running Locust tests here
       - name: Run Locust tests
         run: locust -f locustfile.py --headless -u 10000 -r 100 --run-time 2m
